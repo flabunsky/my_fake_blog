@@ -11,7 +11,7 @@ spec:
   selector:
     app: blog-nginx
   # put your Azure public IP in here
-  #loadBalancerIP: a.b.c.d
+  loadBalancerIP: 52.173.28.225
   type: LoadBalancer
 ---
 apiVersion: apps/v1beta1
@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: flexlab/my-fake-blog:nginx-20180407
+        image: flexlab/my-fake-blog:nginx-20180408
         imagePullPolicy: Always
         ports:
         - containerPort: 80

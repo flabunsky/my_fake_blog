@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: words
-        image: flexlab/my-fake-blog:ghost-20180407
+        image: flexlab/my-fake-blog:ghost-20180408
         imagePullPolicy: Always
         ports:
         - containerPort: 2368
